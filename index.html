@@ -4,11 +4,26 @@
     www.riju.co
 -->
 <html>
-	<head>
+
+<head>
     <title>Swarnabhumi Banquets</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <style>
+        .image-fit {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (min-width: 512px) {
+            .logo {
+                padding: 30rem;
+            }
+        }
+    </style>
 </head>
 
 <body class="homepage is-preload">
@@ -18,9 +33,11 @@
         <section id="header" class="wrapper">
 
             <!-- Logo -->
-            <div id="logo">
+            <div id="logo" class="image featured logo">
+                <!--
                 <h1><a href="index.html">Swarnabhumi Banquets</a></h1>
-                <p>A free responsive site template by HTML5 UP</p>
+-->
+                <img src="images/logo.png">
             </div>
 
             <!-- Nav -->
@@ -88,10 +105,25 @@
             <div class="title">Occasions</div>
             <div class="container">
 
-                <!-- Image -->
-                <a href="#" class="image featured">
-                    <img src="images/pic01.jpg" alt="" />
-                </a>
+                <div class="owl-carousel ">
+                    <img src="images/1.jpg" class="image-fit">
+                    <img src="images/2.jpg" class="image-fit">
+                    <img src="images/3.jpg" class="image-fit">
+                    <img src="images/4.jpg" class="image-fit">
+                    <img src="images/5.jpg" class="image-fit">
+                    <img src="images/6.jpg" class="image-fit">
+
+
+                    <!-- Image -->
+                    <!--
+                    <div>
+                        <a href="#" class="image featured">
+                            <img src="images/pic01.jpg" alt="" />
+                        </a>
+                    </div>
+-->
+                </div>
+
 
                 <!-- Features -->
                 <section id="features">
@@ -368,5 +400,18 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
 
+    <script>
+        var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true.$anchorScroll,
+                dots : false,
+            });
+    </script>
 </body></html>
