@@ -15,12 +15,24 @@
     <style>
         .image-fit {
             max-width: 100%;
-            height: auto;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .arrow-list>ul li {
+            list-style: none;
+            background: url(images/point.png) no-repeat 100px 50px;
+            background-position: left;
+            padding-left: 2.3em;
+            margin-top: 0.3em;
         }
 
         @media only screen and (min-width: 512px) {
             .logo {
-                padding: 30rem;
+                overflow: hidden;
+                max-height: 100%;
+                padding-top: 0rem;
+                z-index: 1;
             }
         }
     </style>
@@ -28,21 +40,44 @@
 
 <body class="homepage is-preload">
     <div id="page-wrapper">
-
+            
         <!-- Header -->
         <section id="header" class="wrapper">
+            
+           
+
 
             <!-- Logo -->
             <div id="logo" class="image featured logo">
-                <!--
-                <h1><a href="index.html">Swarnabhumi Banquets</a></h1>
--->
-                <img src="images/logo.png">
+                    
+                      <div class="owl-carousel " >
+                    <img src="images/banquet/1.jpg" class="image-fit">
+                    <img src="images/banquet/2.jpg" class="image-fit">
+                    <img src="images/banquet/3.jpg" class="image-fit">
+                    <img src="images/banquet/4.jpg" class="image-fit">
+                    <img src="images/banquet/5.jpg" class="image-fit">
+                    <img src="images/banquet/6.jpg" class="image-fit">
+                    <img src="images/banquet/8.jpg" class="image-fit">
+                    <img src="images/banquet/11.jpg" class="image-fit">
+                    <img src="images/banquet/12.jpg" class="image-fit">
+                    <img src="images/banquet/13.jpg" class="image-fit">
+                    <img src="images/banquet/14.jpg" class="image-fit">
+                    <img src="images/banquet/15.jpg" class="image-fit">
+                    <img src="images/banquet/16.jpg" class="image-fit">
+                    <img src="images/banquet/17.jpg" class="image-fit">
+                    <img src="images/banquet/18.jpg" class="image-fit">
+                    <img src="images/banquet/19.jpg" class="image-fit">
+                    <img src="images/banquet/20.jpg" class="image-fit">
+
+                </div>
+                
             </div>
 
             <!-- Nav -->
-            <nav id="nav">
+            <nav id="nav" style="z-index: 2;">
+               
                 <ul>
+                    <li><a href="index.html"><img src="images/logo.png"  height="50px" style="margin-bottom: -10px;padding-top: 15px;"></a></li>
                     <li class="current"><a href="index.html">Home</a></li>
                     <!--
 								<li>
@@ -71,11 +106,13 @@
                     <li><a href="#footer">Contact Us</a></li>
                 </ul>
             </nav>
+            
+     
 
         </section>
 
         <!-- Intro -->
-        <section id="intro" class="wrapper style1">
+        <section id="intro" class="wrapper style1" style="z-index: 2;">
             <div class="title">About Us</div>
             <div class="container">
                 <!--                <p class="style1">Swarnabhumi is a space that serves to showcase, celebrate & bring to life moments close to the heart & soul.</p>-->
@@ -133,8 +170,8 @@
                     </header>
                     <div class="feature-list">
                         <div class="row">
-                            <div class="col-4 col-12-medium">
-                                <h3>Business Events</h3>
+                            <div class="col-4 col-12-medium arrow-list">
+                                <h3 style="color: #484d55!important;text-align: center;">Business Events</h3>
 
                                 <ul>
                                     <li>Business Meets</li>
@@ -153,8 +190,8 @@
 
                             </div>
 
-                            <div class="col-4 col-12-medium">
-                                <h3>Social Events</h3>
+                            <div class="col-4 col-12-medium arrow-list">
+                                <h3 style="color: #484d55!important;text-align: center;">Social Events</h3>
                                 <ul>
                                     <li>Weddings</li>
                                     <li>Receptions</li>
@@ -171,8 +208,8 @@
 
                             </div>
 
-                            <div class="col-4 col-12-medium">
-                                <h3>Arrangements</h3>
+                            <div class="col-4 col-12-medium arrow-list">
+                                <h3 style="color: #484d55!important;text-align: center;">Arrangements</h3>
                                 <ul>
                                     <li>Theme decor and floral arrangements</li>
                                     <li>Audio-visual equipment</li>
@@ -247,7 +284,6 @@
 -->
                     </div>
                     <ul class="actions special">
-                        <li><a href="#" class="button style1 large">Get Started</a></li>
                         <li><a href="#" class="button style2 large">Contact Us</a></li>
                     </ul>
                 </section>
@@ -404,14 +440,26 @@
 
     <script>
         var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                items: 1,
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true.$anchorScroll,
-                dots : false,
-            });
+       
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true.$anchorScroll,
+            dots: false,
+        });
+         var owl2 = $('.owl-carousel2');
+         owl2.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true.$anchorScroll,
+            dots: false,
+        });
     </script>
+
 </body></html>
