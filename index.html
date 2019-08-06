@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
     <style>
         .image-fit {
-            max-width: 100%;
-            max-height: 100%;
             object-fit: contain;
         }
 
@@ -34,11 +32,17 @@
                 padding-top: 0rem;
                 z-index: 1;
             }
+             .image-fit {
+            object-fit: contain;
+        }
         }
     </style>
 </head>
 
 <body class="homepage is-preload">
+    <div class="" style="position: fixed;top: 1rem;left: 0;z-index: 5;">
+        <img src="images/logo.png"  height="150px" style="margin-bottom: -10px;padding-top: 15px;z-index: 5;">
+    </div>
     <div id="page-wrapper">
             
         <!-- Header -->
@@ -48,7 +52,7 @@
 
 
             <!-- Logo -->
-            <div id="" class="image  logo">
+            <div id="" class="image  logo" style="overflow: hidden;">
                     
                       <div class="owl-carousel " >
                     <img src="images/banquet/1.jpg" class="image-fit">
@@ -77,7 +81,6 @@
             <nav id="nav" style="z-index: 2;">
                
                 <ul>
-                    <li><a href="index.html"><img src="images/logo.png"  height="50px" style="margin-bottom: -10px;padding-top: 15px;"></a></li>
                     <li class="current"><a href="index.html">Home</a></li>
                     <!--
 								<li>
