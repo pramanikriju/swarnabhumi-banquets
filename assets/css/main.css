@@ -2247,7 +2247,7 @@ input, select, textarea {
 /* Features */
 
 	#features header.style1 {
-		padding-bottom: 5em;
+		padding-bottom: 3em;
 	}
 
 	#features ul.actions {
@@ -2272,7 +2272,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #282b34 url("images/overlay.png");
+		background: #420f0f url("images/overlay.png");
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
