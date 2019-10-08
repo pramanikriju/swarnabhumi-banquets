@@ -1955,7 +1955,7 @@ input, select, textarea {
 
 	.wrapper {
 		position: relative;
-		padding: 6em 0 9em 0;
+/*		padding: 6em 0 9em 0;*/
 	}
 
 		.wrapper .title {
@@ -2339,7 +2339,7 @@ input, select, textarea {
 			}
 
 		#footer .title {
-			background: #282b34 url("images/overlay.png");
+			background: #420f0f url("images/overlay.png");
 			color: #eee;
 		}
 
