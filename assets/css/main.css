@@ -2382,7 +2382,7 @@ input, select, textarea {
 			display: inline-block;
 			border-radius: 0.35em;
 			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.05);
-			color: #aaa;
+			color: #ffffff;
 			color: rgba(255, 255, 255, 0.25);
 			padding: 0.75em 2em;
 			font-size: 0.9em;
@@ -2392,22 +2392,25 @@ input, select, textarea {
 				display: inline-block;
 				margin-left: 1em;
 				padding-left: 1em;
+                color: inherit;
 				border-left: solid 1px #333;
 				border-left-color: rgba(255, 255, 255, 0.05);
+                color: black;
 			}
 
 				#copyright ul li:first-child {
 					border-left: 0;
 					margin-left: 0;
 					padding-left: 0;
+                    color: black;
 				}
 
 		#copyright a {
-			color: inherit;
+			color: black;
 		}
 
 			#copyright a:hover {
-				color: #fff;
+				color: #4c4c4c;
 			}
 
 /* XLarge */
